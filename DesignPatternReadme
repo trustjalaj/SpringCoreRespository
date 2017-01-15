@@ -1,0 +1,123 @@
+Q1)What are DesignPatterns?How it is useful?
+Ans:
+1)DesignPatterns are best practices to use S/W Technologies affectively in our Applications because .
+a)It supports our code while developing S/W projects.
+Some of the Design Patters are:
+
+JDK Level
+1)Singleton class.
+2)Synchronized Singleton class.
+3)Factory method/Factory pattern
+4)String Constant Pool
+5)Abstract Factory
+6)Template method
+7)Builder pattern
+8)prototype pattern
+9)Flyweigh pattern
+10)IOC pattern
+11)DTO class object
+
+WebLevel:
+1)View Helper Resolver
+2)MVC 
+3)Front Controller
+
+Integration Level Design Pattern:
+1)
+
+Dao Layer:
+1)
+
+
+1)Singleton class.
+Q)Why do we need Singleton class?
+Sometimes we create multiple objects of a java class having same data.
+Thus wasting memory and degrading performance.
+b)And therefore it is recommended to create one object and use it multiple times.
+c)The java class that allows to create one object and use it multiple times is called Singletom class.
+For Ex:Logger classobject of Log4j API.
+
+Rules to implement Singleton java class
+a)It must have private Constructor?
+Why?
+b)It mush have static reference variable of same class.
+Why?
+c)It must have static factory method having the logic of Singleton.
+Why?
+d)Override clone to suppress Cloning process
+Why?
+
+Program1:In package singletonTest
+a)SingletonTest class:
+b)SingletonView class:
+
+2)Synchronized Singleton class.
+Q)Why do we need Singleton class?
+a)When multiple threads act on a single object there is a possibility of Multithreading issues.
+It is recommended to design SynchronizedSingleton java class.
+
+Program2:
+SynchronizedSingletonTest class:
+SynchronizedSingletonView class:
+
+3)FactoryMethod/Factory Pattern:
+Q)Why we use Factory Method:
+a)Creating object via new keyword has less flexibility and has some restrictions?
+Why?Give some Examples:
+b)The method of a java class that is capable of returning its own class object or other class object is called  Factory method.
+
+Thus,it's useful to create objects of a class outside its class,that class must contains only private Construtor.
+Hence useful while designing Singleton java class for ex static factory.
+These are of two types:
+i)static factory     ii)instance factory 
+
+
+ii)Why we require instance factory pattern while creating objects?
+i.e objects that deal with new keyword?
+
+4)StringConstant Pool:
+Q1)Why we use StringConstant pool?
+a)String Constant Pool contains a set of readily available obects i.e.
+b)When we create objects via String Constant pool,new objects will only be created when it is not present in pool.
+Q2)Which class in Java is responsible to create Objects in String constant pool?
+Q3)Why cannot we create objects via some other String Objects in String constant pool??
+
+Rules to implement your own class as immutable class
+1)Class must be final.Why?So that the cannot be Overrided
+2)Member vriables must be taken as final,private variable.Why?
+a)final because the variable cannot be modified and
+b)private because it's value(data) should not be used outside this class.
+c)When data modifications are required,then it should be done through factory methods having logic to return new objects.
+
+
+Program3:
+
+5)Template Design Pattern:
+Q)Why we use this pattern?
+a)Instead of calling each method one by one at various time.
+For Ex:
+a();
+b();
+c();
+d();
+e();
+
+b)It is recommended to create a single method and call each method in that single method so that you have
+to call only one method whereever it is used again.
+
+For Ex:
+public void m1(){
+a();
+b();
+c();
+d();
+e();
+}
+
+
+Program4:In package TemplateTest and class
+TemplateTest
+
+Q1)Where is the file saved in which we stored the sum?
+Q2)Why we use FileOutputStream,BufferedWriter and OutputStreamWriter?
+
