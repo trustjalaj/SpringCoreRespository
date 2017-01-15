@@ -7,20 +7,20 @@ Some of the Design Patters are:
 JDK Level
 1)Singleton class.
 2)Synchronized Singleton class.
-3)Factory method/Factory pattern
-4)String Constant Pool
-5)Abstract Factory
-6)Template method
-7)Builder pattern
-8)prototype pattern
-9)Flyweigh pattern
-10)IOC pattern
-11)DTO class object
+3)Factory method/Factory pattern.
+4)String Constant Pool.
+5)Template method.
+6)Abstract Factory.
+7)Builder pattern.
+8)prototype pattern.
+9)Flyweigh pattern.
+10)IOC pattern.
+11)DTO class object.
 
 WebLevel:
-1)View Helper Resolver
-2)MVC 
-3)Front Controller
+1)View Helper Resolver..
+2)MVC. 
+3)Front Controller.
 
 Integration Level Design Pattern:
 1)
@@ -95,7 +95,7 @@ Program3:
 5)Template Design Pattern:
 Q)Why we use this pattern?
 a)Instead of calling each method one by one at various time.
-For Ex:
+For Ex1:
 a();
 b();
 c();
@@ -105,19 +105,18 @@ e();
 b)It is recommended to create a single method and call each method in that single method so that you have
 to call only one method whereever it is used again.
 
-For Ex:
+For Ex1:
 public void m1(){
 a();
 b();
 c();
-d();
-e();
-}
-
+?
 
 Program4:In package TemplateTest and class
 TemplateTest
 
 Q1)Where is the file saved in which we stored the sum?
 Q2)Why we use FileOutputStream,BufferedWriter and OutputStreamWriter?
+
+6)Abstract Factory Pattern:
 
