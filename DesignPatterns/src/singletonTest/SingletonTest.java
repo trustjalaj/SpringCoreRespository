@@ -1,5 +1,5 @@
 package singletonTest;
-
+//Prog1
 public class SingletonTest extends Object
 {
 
